@@ -1,41 +1,49 @@
-# Prodigy InfoTech Data Science Internship Task 2
+# Titanic Survivorship & Demographic Insights
 
-Perform data cleaning and exploratory data analysis (EDA)on a dataset of your choice, such as the Titanic dataset from Kaggle. Explore the relationships between variables and
-identify patterns and trends in the data.
+An in-depth exploratory data analysis (EDA) and data cleaning project on the historic Titanic passenger manifest, examining demographic and socio-economic influences on survival probability.
 
-### Task Completed
+## 📌 Project Overview
+The Titanic disaster is one of the most infamous maritime events in history. This project applies data cleaning techniques and exploratory data analysis to the passenger manifest to uncover patterns, validate historical accounts (such as the "women and children first" policy), and analyze how socio-economic standing impacted survival rates.
 
-This submission fulfills the requirements of Task 2, which was to perform data cleaning and exploratory data analysis (EDA). I analyzed the **Titanic dataset** to uncover key insights related to passenger survival based on various factors such as gender, class, and fare.
+![Titanic Passenger Survival Disparities and Correlations](./TASK_02.png)
 
-### Methodology:
+## 🚀 Key Features
+* **Data Cleaning Pipeline:** Handles missing data structural anomalies (e.g., imputing age distributions, adjusting embarked ports) and filters features for statistical relevance.
+* **Demographic Analysis:** Segregates survivorship statistics by gender, passenger class (socio-economic status), age groups, and family presence.
+* **Correlation Mapping:** Computes and visualizes linear/non-linear correlations between numeric passenger features and survival outcomes.
+* **Intuitive Visualizations:** Includes customized distribution plots, count plots, correlation heatmaps, and survivorship breakdown pie charts.
 
-- **Data Acquisition:** The Titanic dataset was sourced from the Kaggle.
-- **Data Cleaning:** Handled missing values in the age and embarked columns and removed unnecessary columns like cabin.
-- **Data Analysis:** Explored survival factors such as age, gender, class, and fare using Python’s visualization libraries.
-- **Key Insights:**
-  - Females had a higher survival rate, reflecting the "women and children first" policy.
-  - Class 3 passengers had the lowest survival rate, highlighting the effect of socio-economic status.
-  - Strong correlations between fare, gender, and survival outcomes.
+## 🛠️ Tech Stack & Libraries
+* **Language:** Python
+* **Data Processing & Manipulation:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
 
-### Visualizations:
+## 📈 Methodology & Pipeline
+1. **Data Acquisition:** Sourced passenger demographics and survival indicators from the [Kaggle Titanic Dataset](https://www.kaggle.com/c/titanic).
+2. **Data Cleaning & Preprocessing:**
+   * Analyzed missing value patterns across `Age`, `Cabin`, and `Embarked`.
+   * Imputed missing `Age` values utilizing median values partitioned by passenger class (`Pclass`).
+   * Dropped columns with excessive missing data (e.g., `Cabin`) to maintain data integrity.
+   * Handled categorical values for survival plotting compatibility.
+3. **Exploratory Data Analysis (EDA):**
+   * Dissected survival rates across multi-dimensional bins: Gender, Class, Age, and Fare.
+   * Visualized variables using count plots and bivariate factor plots.
+4. **Correlation Analysis:** Generated a Pearson correlation heatmap to establish strengths of associations between features (e.g., negative correlation between class number and survival).
 
-- **Bar Charts and Count Plots:** Used to visualize survival ratios across gender, class, and age categories.
-- **Heatmap:** Displayed the correlations between different features and survival.
-- **Pie Charts:** Created to visualize the overall survival ratio as well as survival ratios for males and females.
+## 💡 Key Insights
+* **Gender Disparity:** Female passengers exhibited a significantly higher survival rate (~74%) compared to male passengers (~19%), strongly reflecting historical emergency protocols.
+* **Socio-Economic Stratification:** First-class passengers had a much higher likelihood of survival compared to third-class passengers, pointing to class-based evacuation prioritization.
+* **Fare & Cabin Class Correlation:** Higher ticket fares strongly correlated with increased survival rates, validating the socio-economic impact on passenger outcomes.
 
-### Tools and Libraries:
+## 📂 Project Structure
+```text
+├── Task_02.ipynb   # Exploratory Data Analysis & Cleaning Notebook
+├── titanic.csv     # Titanic passenger manifest dataset
+├── TASK_02.png     # Saved correlation and survival distribution plots
+└── README.md       # Project documentation
+```
 
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-
-### Dataset Source:
-
-- The data used for this analysis can be found at : <a href="https://www.kaggle.com/c/titanic/data?select=test.csv">Kaggle</a>..
-
-### Contact
-
-- <a href="https://www.linkedin.com/in/khan-sohail-386b2027a ">Khan Sohail (LinkedIn)</a>
-- Gmail: ks646397@gmail.com
-
+## 👤 Author
+* **Khan Sohail**
+  * [LinkedIn](https://www.linkedin.com/in/khan-sohail-386b2027a)
+  * Email: ks646397@gmail.com
