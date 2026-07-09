@@ -5,8 +5,6 @@ An in-depth exploratory data analysis (EDA) and data cleaning project on the his
 ## 📌 Project Overview
 The Titanic disaster is one of the most infamous maritime events in history. This project applies data cleaning techniques and exploratory data analysis to the passenger manifest to uncover patterns, validate historical accounts (such as the "women and children first" policy), and analyze how socio-economic standing impacted survival rates.
 
-![Titanic Passenger Survival Disparities and Correlations](./TASK_02.png)
-
 ## 🚀 Key Features
 * **Data Cleaning Pipeline:** Handles missing data structural anomalies (e.g., imputing age distributions, adjusting embarked ports) and filters features for statistical relevance.
 * **Demographic Analysis:** Segregates survivorship statistics by gender, passenger class (socio-economic status), age groups, and family presence.
@@ -37,10 +35,9 @@ The Titanic disaster is one of the most infamous maritime events in history. Thi
 
 ## 📂 Project Structure
 ```text
-├── Task_02.ipynb   # Exploratory Data Analysis & Cleaning Notebook
-├── titanic.csv     # Titanic passenger manifest dataset
-├── TASK_02.png     # Saved correlation and survival distribution plots
-└── README.md       # Project documentation
+├── Task_02.ipynb                       # Exploratory Data Analysis & Cleaning Notebook
+├── titanic.csv                         # Titanic passenger manifest dataset
+└── README.md                           # Project documentation
 ```
 
 ## 👤 Author
